@@ -8,7 +8,14 @@ body{
 	height: 100%;
 	background: rgb(255,255,255);
 }
-
+/*общие классы начало*/
+/*общий класс для link*/
+.link{
+	color: rgb(0,185,254);
+	font-family: 'elektra_medium_proregular';
+	font-size: 14px;
+}
+/*конец общего класса для link*/
 /* clearfix */
 .container-header:before, .clearfix:before,
 .container-header:after, .clearfix:after {
@@ -94,13 +101,58 @@ body{
 	margin-left: 7px;
 }
 .site-left-item-link{
-	color: rgb(0,185,254);
+	
 }
 .site-left-item-link-last{
 	color: rgb(92,123,152);
+	font-family: 'elektra_light_proregular';
+  	font-size: 14px;
 	text-decoration: none;
 }
 .nav__site-right-wrapp{
 	float: right;
 }
-/*Конец навигации под headerом*/
+.site__number-list{
+	display: inline-block;
+	list-style: none;
+	padding-left:30px;
+}
+.site__number-item{
+	display: inline-block;
+}
+.select__site-list{
+	width: 132px;
+	height: 26px;
+	color: rgb(92,123,152);
+	/*отменяем стандартную стилизацию списка*/
+	/*for WebKit*/
+ 	-webkit-appearance: none;
+ 	/* for FF */
+  	-moz-appearance: none;
+  	text-indent: 0.01px; 
+  	text-overflow: '';
+  	/* for IE */
+  	-ms-appearance: none;
+  	appearance: none!important;
+  	/*конец отмены стандартной стилизации списка*/
+  	background-image: url(../img/select.png);
+  	background-position: right center;
+  	background-repeat: no-repeat;
+  	font-family: 'elektra_light_proregular';
+  	font-size: 14px;
+}
+/*/*Конец навигации под headerом*/
+
+/*Начало основного контента включая левое меню*/
+/*Начало меню*/
+.main__menu{
+	float: left;
+}
+
+/*Конец меню*/
+.content{
+	float: right;
+	width: 70%;
+}
+
+/*Конец основного контента включая левое меню
