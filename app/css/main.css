@@ -155,4 +155,96 @@ body{
 	width: 70%;
 }
 
-/*Конец основного контента включая левое меню
+/*Конец основного контента включая левое меню*/
+
+/*Начало footer*/
+.page__footer{
+	height: 238px;
+	background: url(../img/footer-background.png);
+}
+.footer-wrap{
+	width:83.3%;
+	height: 100%;
+	margin: 0 auto;
+	display: table;
+}
+.page__footer-wrap-img{
+	display: table-cell;
+	vertical-align: middle;
+}
+.page__footer-wrap-all-menu{
+	display: table-cell;
+	vertical-align: middle;
+}
+.page__footer-social{
+	display: table-cell;
+	vertical-align: middle;
+}
+.page__footer-wrap-menu{
+	display: inline-block;
+	padding-left: 74px;
+}
+.page__footer-menu-zagolovok{
+	color: rgb(255,255,255);
+	font-family: 'elektra_light_probold';
+	font-size: 14px;
+}
+.page__footer-menu-list{
+	list-style: none;
+	padding-left: 0;
+}
+.page__footer-menu-item{
+	margin-bottom: 12px;
+}
+.page__footer-menu-link{
+	color: rgb(255,255,255);
+	font-family: 'elektra_light_probold';
+	font-size: 14px;	
+}
+
+.page__footer-social-store-item{
+	display: inline-block;	
+}
+.page__footer-social-store-list{
+	list-style: none;
+}
+.appstore{
+	background: url(../img/social/appstore.png) center no-repeat;
+}
+.googleplay{
+	background: url(../img/social/googleplay.png) center no-repeat;	
+}
+.page__footer-social-list{
+	list-style: none;
+
+}
+.page__footer-social-item{
+	display: inline-block;
+	margin-left: 10px;
+}
+.page__footer-social-item:first-child{
+	margin-left: 0;
+}
+.page__footer-social-store-link{
+  display: block;
+  text-indent: -9999px;
+  height: 40px;
+  width: 90px;
+}
+.page__footer-social-link{
+	display: block;
+  	text-indent: -9999px;
+  	height: 40px;
+  	width: 40px;	
+}
+
+.vk{
+	background: url(../img/social/vk.png) center no-repeat;
+}
+.fb{
+	background: url(../img/social/facebook.png) center no-repeat;
+}
+.tw{
+	background: url(../img/social/twitter.png) center no-repeat;
+}
+/*Конец footer*/
