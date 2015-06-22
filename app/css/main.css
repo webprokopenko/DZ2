@@ -1,0 +1,58 @@
+/*блок для скрытия текста и картинок если сss загрузился удачно*/
+.text-hidden{
+	display: none;
+}
+/*конец блок для скрытия*/
+body{
+	width: 100%;
+	height: 100%;
+	background: rgb(255,255,255);
+}
+
+/* clearfix */
+.container-header:before, .clearfix:before,
+.container-header:after, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.container-header:after, .clearfix:after {
+  clear: both;	
+}
+/* clearfix - конец */
+/* общие классы - конец */
+
+/*Начало header*/
+.header{
+	width: 100%;
+	height: 120px;
+	background: url(../img/header-background.png);
+}
+.container-header{
+	width:83.3%;  /* 83.3%*/
+	min-width: 400px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.top__logo{
+	float: left;
+}
+.contact{
+	float: right;
+}
+.tel{
+		margin-bottom: 16px;
+}
+.tel .contact-tel{
+	font-family: 'elektra_light_probold';
+	color: rgb(92,123,152);
+}
+.email .contact-email{
+	font-family: 'elektra_light_proregular';
+	color: rgb(97,57,147);
+}
+.top__menu{
+	position: absolute;
+	left:100px;
+	top:200px;
+}
+/*Конец header*/
