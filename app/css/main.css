@@ -106,6 +106,19 @@ html{
 	background: rgb(247,247,247);
 	margin:0;
 }
+.top__menu-item:before{ /*Добавление стрелки leftarrowdiv DIV*/
+content:'';
+display:block-inline;
+position:relative;
+margin-right:20px;
+border-color: black black black transparent; /*цвет границы должен быть тем же самым как цвет фона div*/
+border-style: solid;
+border-width: 10px;
+}
+
+
+
+
 .top__menu-link{
 	color: rgb(29,123,152);
 }
