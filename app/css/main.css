@@ -8,6 +8,11 @@ body{
 	height: 100%;
 	background: rgb(255,255,255);
 }
+html{
+	width: 100%;
+	height: 100%;
+	background: rgb(255,255,255);	
+}
 /*общие классы начало*/
 /*общий класс для link*/
 .link{
@@ -34,6 +39,26 @@ body{
 }
 /* clearfix - конец */
 /* общие классы - конец */
+
+/* прибьём футер к низу  -- Ваня это просто хак - запомни это и используй, не заморачивайся по поводу того как он работает */
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+	height: auto!important;
+	overflow: hidden;
+}
+.wrapper:after {
+	content: "";
+	height: 238px;
+	display: block;
+}
+.page__footer{
+	height: 238px;
+	margin-top: -238px;	
+}
+/* прибьём футер к низу - конец*/
+
 
 /*Начало header*/
 .header{
@@ -166,7 +191,6 @@ body{
 
 /*Начало footer*/
 .page__footer{
-	height: 238px;
 	background: url(../img/footer-background.png);
 }
 .footer-wrap{
@@ -301,3 +325,32 @@ body{
 	font-size: 15px;
 }
 /*Конец О магазине*/
+/*Главное левое меню*/
+.main__menu-group-top{
+	background: rgb(0,185,254);
+	padding: 9px 20px;
+}
+.main__menu-group-link{
+	color: rgb(255,255,255);
+	font-family: 'elektra_light_proregular';
+	font-size: 15px;
+	text-decoration: none;
+}
+.main__menu-item{
+	border: 1px solid rgb(218,225,235);
+	width: 210px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 32px;
+	padding-right: 20px;
+	list-style: none;
+	background-image: url(../img/list-top.png);
+  	background-position: 20px center;
+  	background-repeat: no-repeat;
+}
+.main__menu-link{
+	font-family: 'elektra_light_probold';
+	font-size: 15px;
+	color: rgb(92,123,152);
+}
+/*Конец главного левого меню*/
