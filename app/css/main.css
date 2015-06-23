@@ -16,6 +16,13 @@ body{
 	font-size: 14px;
 }
 /*конец общего класса для link*/
+/*общий клсс text*/
+.text{
+	 font-family: 'elektra_light_proregular';
+	 color: rgb(92,123,152);
+	 font-size: 16px;
+}
+/*конец общего класса text*/
 /* clearfix */
 .container-header:before, .clearfix:before,
 .container-header:after, .clearfix:after {
@@ -248,3 +255,49 @@ body{
 	background: url(../img/social/twitter.png) center no-repeat;
 }
 /*Конец footer*/
+
+/*блок контента*/
+.content__item{
+	display: table;
+	border: 1px solid rgb(220,227,236);
+	margin-bottom: 20px;
+}
+.content__item-wrap-img{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding:30px;
+}
+.content__item-img{
+	width: 100px;
+	height: 80px;
+}
+.content__item-wrap-text{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	width: 80%;
+}
+.content__item-link{
+	padding-bottom: 23px;
+}
+.content__list-link:hover{
+	box-shadow: 10px solid black;
+}
+.content__list{
+	padding-left: 0;
+}
+/*конец блока контента*/
+
+/*О магазине*/
+.about__magazin-zag{
+	font-family: 'elektra_light_probold';
+	color: rgb(92,123,152);
+	font-size: 25px;
+}
+.about__magazin-text{
+	font-family: 'elektra_light_proregular';
+	color: rgb(92,123,152);
+	font-size: 15px;
+}
+/*Конец О магазине*/
