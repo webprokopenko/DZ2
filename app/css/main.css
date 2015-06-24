@@ -3,6 +3,56 @@
 	display: none;
 }
 /*конец блок для скрытия*/
+/*Начало стили верхнего меню*/
+.top__menu{
+	position: relative;
+	display: table-row;
+	text-align: center;
+	margin-top: 10px;
+	top:100px;
+}
+.top__menu-item{
+	list-style: none;
+}
+.top__menu-element{
+	display: inline-block;
+}
+.top__menu-list{
+	padding: 0;
+	margin: -13px;	
+	display: table;
+}
+.top__menu-elem-flag{
+	position: relative;
+	display: table-cell;
+  	margin: 0;
+  	border: 22px solid; 
+  	border-color: rgb(0,185,254) rgb(0,185,254) rgb(0,185,254) transparent;
+  	width: 0;
+
+  }
+.top__menu-elem-block{
+	display: table-cell;
+	background-color: rgb(0,185,254);
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+    width: auto;
+    color: rgb(247,247,247);
+   	font-family: 'elektra_light_proregular'; 
+
+}
+.top__menu-elem-triangle{
+	display: table-cell;
+    border-top: 22px solid transparent;
+    border-left: 22px solid rgb(0,185,254);
+    border-bottom: 22px solid transparent;
+    width: 0;
+}
+.top__menu-link{
+	text-decoration: none;
+}
+/*конец стилей верхнего меню*/
 body{
 	width: 100%;
 	height: 100%;
@@ -63,16 +113,23 @@ html{
 /*Начало header*/
 .header{
 	width: 100%;
-	height: 120px;
+	height: 162px;
 	background: url(../img/header-background.png);
-	margin-bottom: 120px;
+	background-repeat-x:inherit;
+	background-repeat-y:no-repeat;
+	margin: 0;
 }
 .container-header{
 	width:83.3%;  /* 83.3%*/
 	min-width: 400px;
 	margin: 0 auto;
 	padding-top: 25px;
+	display: table;
+	height: 100%;
 
+}
+.row{
+	display: table-row;
 }
 .top__logo{
 	float: left;
@@ -80,6 +137,7 @@ html{
 .contact{
 	float: right;
 }
+
 .tel{
 		margin-bottom: 16px;
 }
@@ -91,37 +149,7 @@ html{
 	font-family: 'elektra_light_proregular';
 	color: rgb(97,57,147);
 }
-.top__menu{
-	position: absolute;
-	top:100px;
-	text-align: center;
 
-}
-.top__menu-list{
-	margin:0;
-}
-.top__menu-item{
-	display: inline-block;
-	padding: 14px 11px;
-	background: rgb(247,247,247);
-	margin:0;
-}
-.top__menu-item:before{ /*Добавление стрелки leftarrowdiv DIV*/
-content:'';
-display:block-inline;
-position:relative;
-margin-right:20px;
-border-color: black black black transparent; /*цвет границы должен быть тем же самым как цвет фона div*/
-border-style: solid;
-border-width: 10px;
-}
-
-
-
-
-.top__menu-link{
-	color: rgb(29,123,152);
-}
 .main{
 	width:83.3%;  /* 83.3%*/
 	min-width: 400px;
@@ -366,4 +394,4 @@ border-width: 10px;
 	font-size: 15px;
 	color: rgb(92,123,152);
 }
-/*Конец главного левого меню*/
+/*Конец главного левого меню
