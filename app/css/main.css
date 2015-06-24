@@ -52,6 +52,9 @@
 .top__menu-link{
 	text-decoration: none;
 }
+.top__menu-list:hover{
+	background-color: red;
+}
 /*конец стилей верхнего меню*/
 body{
 	width: 100%;
