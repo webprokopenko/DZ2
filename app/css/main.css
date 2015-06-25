@@ -113,7 +113,7 @@ html{
 
 /* прибьём футер к низу  -- Ваня это просто хак - запомни это и используй, не заморачивайся по поводу того как он работает */
 .wrapper{
-	
+	position: relative;
 	min-height: 100%;
 	min-width: 970px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
 	height: auto!important;
@@ -125,6 +125,7 @@ html{
 	display: block;
 }
 .page__footer{
+	position: relative;
 	height: 238px;
 	margin-top: -238px;	
 }
