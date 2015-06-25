@@ -13,6 +13,7 @@
 }
 .top__menu-item{
 	list-style: none;
+
 }
 .top__menu-element{
 	display: inline-block;
@@ -27,34 +28,51 @@
 	display: table-cell;
   	margin: 0;
   	border: 22px solid; 
-  	border-color: rgb(0,185,254) rgb(0,185,254) rgb(0,185,254) transparent;
+  	border-color: rgb(247,247,247) rgb(247,247,247) rgb(247,247,247) transparent;
   	width: 0;
 
   }
 .top__menu-elem-block{
 	display: table-cell;
-	background-color: rgb(0,185,254);
+	background-color: rgb(247,247,247);
 	width: auto;
 	text-align: center;
 	vertical-align: middle;
     width: auto;
-    color: rgb(247,247,247);
+    color: rgb(92,123,152);
    	font-family: 'elektra_light_proregular'; 
 
 }
 .top__menu-elem-triangle{
 	display: table-cell;
     border-top: 22px solid transparent;
-    border-left: 22px solid rgb(0,185,254);
+    border-left: 22px solid rgb(247,247,247);
     border-bottom: 22px solid transparent;
     width: 0;
 }
 .top__menu-link{
 	text-decoration: none;
 }
-.top__menu-list:hover{
-	background-color: red;
+.top__menu-list:hover .top__menu-elem-flag {
+	border-color: rgb(220,230,240) rgb(220,230,240) rgb(220,230,240) transparent;
 }
+.top__menu-list:hover .top__menu-elem-block{
+	background-color: rgb(220,230,240);
+
+}
+.top__menu-list:hover .top__menu-elem-triangle{
+	border-left: 22px solid rgb(220,230,240);
+}
+.top__menu-list:active .top__menu-elem-flag {
+	border-color: rgb(0,185,254) rgb(0,185,254) rgb(0,185,254) transparent;
+}
+.top__menu-list:active .top__menu-elem-block{
+	background-color: rgb(0,185,254);
+}
+.top__menu-list:active .top__menu-elem-triangle{
+	border-left: 22px solid rgb(0,185,254);
+}
+
 /*конец стилей верхнего меню*/
 body{
 	width: 100%;
@@ -160,10 +178,15 @@ html{
 }
 /*Конец header*/
 /*Навигация под headerом*/
+.nav__site{
+	width: 960px;
+	margin: 0 auto;
+}
 .nav__site-left-wrapp{
 	float: left;
 }
 .nav__site-left-list{
+	padding: 0;
 }
 .nav__site-left-img{
 	display: inline-block;
@@ -221,16 +244,24 @@ html{
 
 /*Начало основного контента включая левое меню*/
 /*Начало меню*/
+.main__menu-list{
+	padding: 0;
+}
 .main__menu{
 	float: left;
+	width: 210px;
 }
 
 /*Конец меню*/
 .content{
-	float: right;
-	width: 70%;
+	float: left;
+	width: 700px;
+	margin-left: 50px;
 }
-
+.body {
+	width: 960px;
+	margin:0 auto;
+}
 /*Конец основного контента включая левое меню*/
 
 /*Начало footer*/
@@ -329,6 +360,7 @@ html{
 	display: table;
 	border: 1px solid rgb(220,227,236);
 	margin-bottom: 20px;
+	width: 100%;
 }
 .content__item-wrap-img{
 	display: table-cell;
@@ -382,7 +414,6 @@ html{
 }
 .main__menu-item{
 	border: 1px solid rgb(218,225,235);
-	width: 210px;
 	padding-top: 9px;
 	padding-bottom: 9px;
 	padding-left: 32px;
